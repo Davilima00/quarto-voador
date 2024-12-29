@@ -16,7 +16,7 @@ main {
 }
 
 .titulo{
-    background-image: url("/fotos/quarto3-foto2.jpeg");
+    background-color: blue;
 
     background-size: 50% 50%;
     background-size: cover; /* A imagem será redimensionada para cobrir toda a área da div */
@@ -46,6 +46,8 @@ main {
 
 
 
+
+
 h1 {
     color: aliceblue;
     font-size: 70px;
@@ -63,12 +65,14 @@ h1 {
     0% {
       transform: rotate(0deg);
       border-radius: 0%;
+      background-color: rgba(0, 0, 255, 0.149);
 
 
     }
     100% {
       transform: rotate(360deg); /* Completa uma volta */
       border-radius: 50%;
+      background-color: blue;
     }
 }
 
