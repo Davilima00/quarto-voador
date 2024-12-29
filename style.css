@@ -1,0 +1,75 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+
+.titulo{
+    background-image: url("/fotos/quarto3-foto2.jpeg");
+
+    background-size: 50% 50%;
+    background-size: cover; /* A imagem será redimensionada para cobrir toda a área da div */
+    background-position: center; /* A imagem será centralizada na div */
+    background-repeat: no-repeat;
+    background-size: auto;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: font-size 5s ease;
+
+    transition: height  10s ease;
+    transition: width  10s ease;
+
+    height: 250px;
+    width: 250px;
+
+    margin: 10px;
+    
+
+    animation: rotateAnimation 5s linear infinite;
+
+}
+
+
+
+h1 {
+    color: aliceblue;
+    font-size: 70px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+@keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+      border-radius: 0%;
+
+
+    }
+    100% {
+      transform: rotate(360deg); /* Completa uma volta */
+      border-radius: 50%;
+    }
+}
+
+
